@@ -1,7 +1,0 @@
-/Users/flurie/csi/.devenv/flake.json
-/Users/flurie/csi/.devenv.flake.nix
-/Users/flurie/csi/.env
-/Users/flurie/csi/devenv.local.nix
-/Users/flurie/csi/devenv.lock
-/Users/flurie/csi/devenv.nix
-/Users/flurie/csi/devenv.yaml
