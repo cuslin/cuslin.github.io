@@ -1,6 +1,7 @@
 ---
 import { getCollection } from "astro:content";
 import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 import FormattedDate from "../components/FormattedDate.astro";
 
@@ -76,6 +77,7 @@ const posts = (await getCollection("blog")).sort(
 		</style>
 	</head>
 	<body>
+		<Header />
 		<main>
 			<section>
 				<ul>
