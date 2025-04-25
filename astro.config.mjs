@@ -6,6 +6,6 @@ import sitemap from "@astrojs/sitemap";
 // https://astro.build/config
 export default defineConfig({
   site: "https://cuslin.github.io",
-  base: "site",
+  base: "/site",
   integrations: [mdx(), sitemap()],
 });
