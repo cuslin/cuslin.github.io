@@ -5,6 +5,6 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://cuslin.github.io",
+  site: "https://www.cumslutincest.com",
   integrations: [mdx(), sitemap()],
 });
