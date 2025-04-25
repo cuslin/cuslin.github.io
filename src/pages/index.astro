@@ -15,7 +15,7 @@ const posts = (await getCollection("blog")).sort(
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 		<link
 			rel="stylesheet"
-			href={`${import.meta.env.BASE_URL}/tufte-css/tufte.css`}
+			href="/tufte-css/tufte.css"
 		/>
 		<style>
 			:root {
@@ -83,7 +83,7 @@ const posts = (await getCollection("blog")).sort(
 						posts.map((post) => (
 							<li>
 								<a
-									href={`${import.meta.env.BASE_URL}/blog/${post.id}/`}
+									href={`/blog/${post.id}/`}
 								>
 									<h4 class="title">{post.data.title}</h4>
 									<p class="date">
