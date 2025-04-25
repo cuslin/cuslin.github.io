@@ -1,7 +1,7 @@
 ---
-title: "Markdown Style Guide"
-description: "Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro."
-pubDate: "Jun 19 2024"
+title: "Demo Shit"
+description: "Look at all this cool stuff you can do!"
+pubDate: "Apr 25 2025"
 ---
 
 Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.

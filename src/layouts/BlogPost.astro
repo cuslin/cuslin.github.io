@@ -1,5 +1,6 @@
 ---
 import type { CollectionEntry } from 'astro:content';
+import Header from '../components/Header.astro';
 import BaseHead from '../components/BaseHead.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 
@@ -19,11 +20,13 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 				margin-left: auto;
 				margin-right: auto;
 				padding-left: 12.5%;
-				font-family: et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+				font-family: "GrandheronSerifNew", et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
 				background-color: #fffff8;
 				color: #111111;
 				max-width: 1400px;
 				counter-reset: sidenote-counter;
+				font-weight: 300;
+				font-size: 1.1rem;
 			}
 
 			/* Article structure */
@@ -37,19 +40,18 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 				padding-top: 1rem;
 				padding-bottom: 1rem;
 			}
-
 			/* Main content width */
 			article > section > p,
 			article > section > footer,
 			article > section > table,
+			article > section > figure,
+			article > section > figure > figcaption,
+			article > section > pre,
 			article > section > h2,
 			article > section > h3,
 			article > section > h4,
 			article > section > h5,
-			article > section > h6,
-			article > section > figure,
-			article > section > figure > figcaption,
-			article > section > pre {
+			article > section > h6{
 				width: 55%;
 				margin-right: 0;
 				margin-left: 0;
@@ -195,6 +197,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 	</head>
 
 	<body>
+		<Header longform={false} />
 		<main>
 			<article>
 				<div class="hero-image">

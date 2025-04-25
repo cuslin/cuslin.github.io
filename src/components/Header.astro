@@ -1,35 +1,33 @@
 ---
 import HeaderLink from "./HeaderLink.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+
+const { longform = true } = Astro.props;
 ---
 
 <header>
 	<nav>
 		<div>
 			<h2><a href="/">{SITE_TITLE}</a></h2>
-			<p class="site-description">{SITE_DESCRIPTION}</p>
+			{longform && <p class="site-description">{SITE_DESCRIPTION}</p>}
 		</div>
-		<!-- <div class="internal-links">
-			<HeaderLink href="/">Home</HeaderLink>
-			<HeaderLink href="/blog">Blog</HeaderLink>
-			<HeaderLink href="/about">About</HeaderLink>
-		</div> -->
 	</nav>
 </header>
 <style>
 	header {
   		font-family: "GrandheronSerifNew";
-  font-style: italic;
-  font-stretch: normal;
-  font-weight: 600;
+	    font-style: italic;
+	    font-stretch: normal;
+    	font-weight: 600;
 		color: var(--text-color);
 		font-size: 64px;
 		margin: 0;
-		/* padding: 0 1em; */
-		/* background: white; */
 		box-shadow: 0 2px 8px rgba(var(--black), 5%);
 	}
 	h2 {
+		font-family: inherit;
+		font-style: italic;
+		font-weight: 600;
 		margin: 0;
 		font-size: 1em;
 	}
